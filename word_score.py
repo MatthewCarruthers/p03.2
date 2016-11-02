@@ -36,3 +36,16 @@ def run_tests():
 # Edit this code
 def scorer(word):
 
+    count = 0
+
+    for char in word:
+
+        if char in "qxyz":
+            count = count + 2
+
+        elif not char in "ieuoa":
+             count = count + 1
+
+
+    print(count)
+
